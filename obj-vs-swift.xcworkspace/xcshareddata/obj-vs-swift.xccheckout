@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E000E790-0C62-4039-823E-D83D0CE4B068</string>
+	<key>IDESourceControlProjectName</key>
+	<string>obj-vs-swift</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FFBADA5825DA86DF0CDFF4D7DD9447A3CDE2F520</key>
+		<string>https://github.com/nsagora/ios-nsagora-3.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>obj-vs-swift.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FFBADA5825DA86DF0CDFF4D7DD9447A3CDE2F520</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nsagora/ios-nsagora-3.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FFBADA5825DA86DF0CDFF4D7DD9447A3CDE2F520</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FFBADA5825DA86DF0CDFF4D7DD9447A3CDE2F520</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios-nsagora-3</string>
+		</dict>
+	</array>
+</dict>
+</plist>
