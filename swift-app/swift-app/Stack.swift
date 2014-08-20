@@ -11,7 +11,7 @@ import Foundation
 struct Stack<T> {
     
     private var items:Array<T> = Array();
-    public var count:Int { return items.count }
+    internal var count:Int { return items.count }
     
     subscript(index:Int)->T? {
         var itemsCopy:Array = items

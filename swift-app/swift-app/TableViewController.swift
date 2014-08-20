@@ -26,7 +26,7 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
         
         actionSheet = UIActionSheet(
-            title: "Options",
+            title: "Available actions on stack",
             delegate: self,
             cancelButtonTitle: "Cancel",
             destructiveButtonTitle: nil,
