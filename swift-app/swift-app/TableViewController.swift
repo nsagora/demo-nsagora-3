@@ -36,15 +36,15 @@ class TableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.stack.count
     }
     
-    override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         var cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("RandomStackCell", forIndexPath: indexPath) as UITableViewCell
         
@@ -54,7 +54,7 @@ class TableViewController: UITableViewController {
             txt = "\(randomDouble)"
         }
 
-        cell.textLabel.text = txt
+        cell.textLabel?.text = txt
         return cell;
     }
     
@@ -71,9 +71,9 @@ extension TableViewController: UIActionSheetDelegate {
     func actionSheet(actionSheet: UIActionSheet!, clickedButtonAtIndex buttonIndex: Int) {
         switch buttonIndex {
             
-        case StackActionTypeOptions.Push.toRaw():
+        case StackActionTypeOptions.Push.rawValue:
             pushItem()
-        case StackActionTypeOptions.Pop.toRaw():
+        case StackActionTypeOptions.Pop.rawValue:
             popItem()
         default:
             cancel()

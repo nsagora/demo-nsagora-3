@@ -11,6 +11,19 @@ import XCTest
 
 class SumTests: XCTestCase {
    
+    func testMesureBlock() {
+        
+        measureMetrics([XCTPerformanceMetric_WallClockTime], automaticallyStartMeasuring: false) { () -> Void in
+            var x = Algorithm.summ(1_000_000);
+            
+            self.startMeasuring();
+            x += Algorithm.summ(2_000_000);
+            x += Algorithm.summ(3_000_000);
+            x += Algorithm.summ(4_000_000);
+            self.stopMeasuring();
+        };
+    }
+
     func testSumOf1000000() {
         self.measureBlock() {
             let val = Algorithm.summ(1_000_000);
