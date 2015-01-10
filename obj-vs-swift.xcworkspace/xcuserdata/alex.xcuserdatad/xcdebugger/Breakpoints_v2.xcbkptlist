@@ -42,13 +42,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "swift-app/swift-appTests/SumTests.swift"
-            timestampString = "442572077.658247"
+            timestampString = "442572871.915548"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
             landmarkName = "testSumOf1000000()"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = ""
+            moduleName = "">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

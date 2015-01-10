@@ -37,38 +37,34 @@ extension SumTests {
     
     func testSumOf_1_000_000_Async () {
         
-        let expectedSum:Double = 500_000_500_000;
-        let n:Double = 1_000_000;
-        var result:Double = 0;
+        let input:Double = 1_000_000;
+        let expectedResult:Double = 500_000_500_000;
+        var actualResult:Double = 0;
         
         let expectation = expectationWithDescription("Expectation for asyn sum calculator");
-        
-        Algorithm.sum(n) { sum in
-            result = sum;
+        Algorithm.sum(input) { sum in
+            actualResult = sum;
             expectation.fulfill();
         }
-        
         waitForExpectationsWithTimeout(1, handler: nil);
         
-        XCTAssertEqual(result, expectedSum, "The sum of an \(n) must me equal to \(expectedSum)");
+        XCTAssertEqual(actualResult, expectedResult, "The sum of an \(input) must me equal to \(expectedResult)");
     }
     
     func testSumOf_5_000_000_Async () {
         
-        let expectedSum:Double = 12_500_002_500_000;
-        let n:Double = 5_000_000;
-        var result:Double = 0;
+        let input:Double = 5_000_000;
+        let expectedResult:Double = 12_500_002_500_000;
+        var actualResult:Double = 0;
         
         let expectation = expectationWithDescription("Expectation for asyn sum calculator");
-        
-        Algorithm.sum(n) { sum in
-            result = sum;
+        Algorithm.sum(input) { sum in
+            actualResult = sum;
             expectation.fulfill();
         }
-        
         waitForExpectationsWithTimeout(1, handler: nil);
         
-        XCTAssertEqual(result, expectedSum, "The sum of an \(n) must me equal to \(expectedSum)");
+        XCTAssertEqual(actualResult, expectedResult, "The sum of an \(input) must me equal to \(expectedResult)");
     }
 }
 
